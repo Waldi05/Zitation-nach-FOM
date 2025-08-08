@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<style xmlns="http://purl.org/net/xbiblio/csl" class="note" version="1.0" page-range-format="expanded">
+  <!-- This style was edited with the Visual CSL Editor (https://editor.citationstyles.org/visualEditor/) -->
+  <info>
+    <title>FOM Zitation nach Leitfaden 2024 (note)</title>
+    <title-short>FOM 2024</title-short>
+    <id>http://www.zotero.org/styles/fom-zitation-nach-leitfaden-2024</id>
+    <link rel="self" href="http://www.zotero.org/styles/fom-zitation-nach-leitfaden-2024"/>
+    <author>
+      <name>Lukas Waldhör</name>
+    </author>
+    <category citation-format="note"/>
+    <category field="generic-base"/>
+    <summary>Dieser Zitationsstil richtet sich nach dem Leitfaden, der hier gefunden werden kann:</summary>
+    <updated>2025-08-08T08:40:25+00:00</updated>
+    <rights>CC BY-NC 4.0</rights>
+  </info>
+  <macro name="Autor_Name_kurz">
+    <group delimiter=", ">
+      <names variable="author" font-style="italic">
+        <name initialize-with="." name-as-sort-order="all"/>
+        <et-al/>
+      </names>
+    </group>
+  </macro>
+  <macro name="Stichwort">
+    <group delimiter=", ">
+      <text variable="title-short"/>
+      <choose>
+        <if match="any" variable="issued">
+          <date date-parts="year" form="text" variable="issued"/>
+        </if>
+        <else>
+          <text value="o. J."/>
+        </else>
+      </choose>
+    </group>
+  </macro>
+  <macro name="Titel">
+    <text variable="title"/>
+  </macro>
+  <macro name="Autor_Name_lang">
+    <group>
+      <names variable="author" font-style="italic">
+        <name delimiter-precedes-last="always" et-al-use-last="true" initialize="false" name-as-sort-order="all"/>
+      </names>
+    </group>
+  </macro>
+  <macro name="Ausgabe">
+    <group>
+      <choose>
+        <if match="any" variable="edition">
+          <group delimiter=". ">
+            <text variable="edition"/>
+            <text term="edition" form="short"/>
+          </group>
+        </if>
+      </choose>
+    </group>
+  </macro>
+  <macro name="Jahrgang_Jahr_Heftnr">
+    <group delimiter=", ">
+      <group delimiter=" ">
+        <text variable="volume"/>
+        <date date-parts="year" form="text" variable="issued" prefix="(" suffix=")"/>
+      </group>
+      <group delimiter=" ">
+        <text value="Nr."/>
+        <text variable="issue"/>
+      </group>
+    </group>
+  </macro>
+  <macro name="Aut_Stichw_Titel">
+    <group delimiter=" ">
+      <text macro="Autor_Name_lang"/>
+      <group prefix="(" suffix="):">
+        <text macro="Stichwort"/>
+      </group>
+      <text macro="Titel"/>
+    </group>
+  </macro>
+  <macro name="URL_Datum_Zugriff">
+    <group delimiter=" ">
+      <text variable="URL" prefix="&lt;" suffix="&gt;"/>
+      <choose>
+        <if match="any" variable="issued">
+          <date form="text" variable="issued" prefix="(" suffix=")"/>
+        </if>
+        <else>
+          <text value="(o. J.)"/>
+        </else>
+      </choose>
+      <date form="text" variable="accessed" prefix="[" suffix="]"/>
+    </group>
+  </macro>
+  <macro name="Smlw_Aut_Titel">
+    <group delimiter=", ">
+      <group delimiter=" ">
+        <names variable="editor">
+          <name font-style="italic" initialize="false" name-as-sort-order="all"/>
+        </names>
+        <text term="editor" form="short" prefix="(" suffix=")"/>
+      </group>
+      <text variable="container-title"/>
+    </group>
+  </macro>
+  <macro name="Sortieren_Internet">
+    <group>
+      <choose>
+        <if type="webpage" match="any">
+          <text value="1000"/>
+        </if>
+        <else-if type="legal_case" match="any">
+          <text value="2"/>
+        </else-if>
+        <else>
+          <text value="1"/>
+        </else>
+      </choose>
+    </group>
+  </macro>
+  <macro name="Aut_HRSG_Stichw_Titel">
+    <group delimiter=", ">
+      <group delimiter=" ">
+        <text macro="Hrsg_Name_lang"/>
+        <text term="editor" form="short" prefix="(" suffix=")"/>
+        <group delimiter=", " prefix="(" suffix="):">
+          <text macro="Stichwort"/>
+        </group>
+        <text macro="Titel"/>
+      </group>
+      <group delimiter=". ">
+        <text macro="Ausgabe"/>
+      </group>
+      <group delimiter=": ">
+        <text variable="publisher-place"/>
+        <text variable="publisher"/>
+      </group>
+      <date date-parts="year" form="text" variable="issued"/>
+    </group>
+  </macro>
+  <macro name="Hrsg_Name_lang">
+    <group>
+      <names variable="editor">
+        <name delimiter-precedes-last="always" et-al-use-last="true" initialize="false" name-as-sort-order="all"/>
+      </names>
+    </group>
+  </macro>
+  <citation et-al-min="4" et-al-use-first="1" disambiguate-add-names="true">
+    <layout delimiter="; " suffix=".">
+      <group delimiter=", ">
+        <choose>
+          <if type="legal_case" match="any">
+            <text value="Diese Fußnote erzeugt die Überschrift &quot;Internetquellen&quot; im Literaturverzeichnis. Vor dem Export der Arbeit sollte sie entfernt werden. Ohne Refresh der Quellen bleibt die Überschrift im Literaturverzeichnis erhalten." strip-periods="false"/>
+          </if>
+          <else>
+            <group delimiter=", ">
+              <text macro="Autor_Name_kurz"/>
+              <text macro="Stichwort"/>
+              <choose>
+                <if match="any" locator="page">
+                  <text variable="locator" prefix="S. "/>
+                </if>
+                <else>
+                  <text value="o. S."/>
+                </else>
+              </choose>
+            </group>
+          </else>
+        </choose>
+      </group>
+    </layout>
+  </citation>
+  <bibliography initialize-with=". " name-as-sort-order="all" hanging-indent="true">
+    <sort>
+      <key macro="Sortieren_Internet"/>
+      <key macro="Autor_Name_lang"/>
+      <key variable="issued"/>
+    </sort>
+    <layout>
+      <group>
+        <choose>
+          <if type="book" match="any">
+            <choose>
+              <if match="any" variable="editor">
+                <text macro="Aut_HRSG_Stichw_Titel"/>
+              </if>
+              <else>
+                <group delimiter=", ">
+                  <text macro="Aut_Stichw_Titel"/>
+                  <text macro="Ausgabe"/>
+                  <group delimiter=": ">
+                    <text variable="publisher-place"/>
+                    <text variable="publisher"/>
+                  </group>
+                  <date date-parts="year" form="text" variable="issued"/>
+                </group>
+              </else>
+            </choose>
+          </if>
+          <else-if type="chapter" match="any">
+            <group delimiter=", ">
+              <text macro="Aut_Stichw_Titel"/>
+              <group delimiter=" ">
+                <text value="in:"/>
+                <text macro="Smlw_Aut_Titel"/>
+              </group>
+              <date date-parts="year" form="text" variable="issued"/>
+              <group delimiter=" ">
+                <text value="S."/>
+                <text variable="page"/>
+              </group>
+            </group>
+          </else-if>
+          <else-if type="article-journal" match="any">
+            <group delimiter=", ">
+              <text macro="Aut_Stichw_Titel"/>
+              <group delimiter=" ">
+                <text value="in:"/>
+                <text variable="container-title-short"/>
+              </group>
+              <text macro="Jahrgang_Jahr_Heftnr"/>
+              <group delimiter=" ">
+                <text value="S."/>
+                <text variable="page"/>
+              </group>
+            </group>
+          </else-if>
+          <else-if type="webpage" match="any">
+            <group delimiter=", ">
+              <text macro="Aut_Stichw_Titel"/>
+              <text macro="URL_Datum_Zugriff"/>
+            </group>
+          </else-if>
+          <else-if type="legal_case" match="any">
+            <text variable="title" font-style="normal" font-variant="normal" font-weight="bold" display="block"/>
+          </else-if>
+        </choose>
+      </group>
+    </layout>
+  </bibliography>
+</style>
