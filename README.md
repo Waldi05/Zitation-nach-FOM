@@ -1,6 +1,6 @@
-# Zitation-nach-FOM
+# Zitation nach FOM
 
-Dieser Zitationsstil richtet sich nach dem Leitfaden zur formalen Gestaltung von Seminar- und Abschlussarbeiten der FOM Hochschule mit dem Stand aus dem Januar 2024.
+Dieser Zitationsstil richtet sich nach dem "Leitfaden zur formalen Gestaltung von Seminar- und Abschlussarbeiten" der FOM Hochschule mit dem Stand aus dem Januar 2024.
 
 ## Installation 
 
