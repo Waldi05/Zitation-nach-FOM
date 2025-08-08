@@ -22,7 +22,7 @@ Dieser Zitationsstil kann in jeder üblichen Zitationssoftware verwendet werden.
 ### Funktionen
 
 Momentan sind die Medientypen Buch, Website und Zeitschriftenartikel voll unterstützt.
-Der Medientyp Buchteil ist eingeschränkt unterstützt, dazu [hier](#aufsatz-aus-sammelwerk-/-buchteil) mehr 
+Der Medientyp Buchteil ist eingeschränkt unterstützt, dazu [hier](#aufsatz-aus-sammelwerk-bzw-buchteil) mehr 
 
 Der Stil verwendet den Eintrag Kurztitel (title-short) für das von der FOM geforderte Stichwort.
 Folgende Felder müssen für eine korrekte Zitation nach dem Leitfaden gefüllt sein:
@@ -44,7 +44,7 @@ Alle Werke, die auf diese Art in einer Fußnote erwähnt wurden, werden bei Erst
 
 Ist ein Buch in der ersten Auflage, soll die Auflage nicht im Verweis im Literaturverzeichnis stehen, hierzu bitte das Feld `Auflage (edition)` leer lassen. (Gilt auch bei Buchteilen / Sammelwerken)
 
-#### Aufsatz aus Sammelwerk / Buchteil
+#### Aufsatz aus Sammelwerk bzw. Buchteil
 
  Um einen Buchteil nach Vorgabe hinzuzufügen müssen zwei Einträge in das Literaturverzeichnis aufgenommen werden. Einer für den Artikel aus dem Buch und einen für das gesamte Buch. Dieses Verhalten wird von Citation Style Language (CSL) nicht unterstützt. Somit ist es nur über Umwege zu erreichen.
  Für die korrekte Zitation wird ein sowohl ein Buchteil (chapter), als auch ein Buch (book) angelegt. Hierbei sind die [hier](#benötigte-angaben) aufgeführten Felder zu befüllen.
