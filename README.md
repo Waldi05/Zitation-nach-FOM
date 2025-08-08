@@ -17,9 +17,7 @@ Dieser Zitationsstil kann in jeder üblichen Zitationssoftware verwendet werden.
 - .csl Datei auswählen
 - fertig
 
-## FOM 2024 verwenden
-
-### Funktionen
+## Funktionen von FOM 2024
 
 Momentan sind die Medientypen Buch, Website und Zeitschriftenartikel voll unterstützt.
 Der Medientyp Buchteil ist eingeschränkt unterstützt, dazu [hier](#aufsatz-aus-sammelwerk-bzw-buchteil) mehr 
@@ -27,7 +25,7 @@ Der Medientyp Buchteil ist eingeschränkt unterstützt, dazu [hier](#aufsatz-aus
 Der Stil verwendet den Eintrag Kurztitel (title-short) für das von der FOM geforderte Stichwort.
 Folgende Felder müssen für eine korrekte Zitation nach dem Leitfaden gefüllt sein:
 
-#### benötigte Angaben
+### benötigte Angaben
 | Medientyp            | benötigte Felder                                                                                                                                                                                                                                                                                                                                                           |
 | -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <h5>Buch</h5>                 | Autor (author) <br>Kurztitel (title-short) <br>Datum / Erscheinungsjahr (issued) <br>Titel (title) <br>Auflage (edition) <br>Ort (publisher-place) <br>Verlag (publisher)                                                                                                                                                                                                  |
@@ -35,6 +33,7 @@ Folgende Felder müssen für eine korrekte Zitation nach dem Leitfaden gefüllt 
 | <h5>Website</h5>              | Autor (author) <br>Kurztitel (title-short) <br>Datum (issued) <br>Titel (title) <br>URL (URL) <br>Heruntergeladen am (accessed)                                                                                                                                                                                                                                            |
 | <h5>Buchteil</h5>             | <h5> im Eintrag “Buchteil” </h5>Autor (author) <br>Kurztitel (title-short) <br>Datum (issued) <br>Titel (title) <br>Herausgeber (editor) <br>Buchtitel (container-title) <br><h5> im Eintrag “Buch” </h5> <br>Herausgeber (editor) <br>Kurztitel (title-short) <br>Datum (issued) <br>Titel (title) <br>Auflage (edition) <br>Ort (publisher-place) <br>Verlag (publisher) |
 
+### FOM 2024 verwenden
 
 Wird eine Fußnote angelegt, kann im Feld Präfix ein `Vgl.` bei einem indirekten Zitat eingefügt werden. Wird das Feld Seite leer gelassen, wird statt einer Seite `o. S.` (ohne Seite) angegeben.
 <img width="1076" height="708" alt="image" src="https://github.com/user-attachments/assets/31cee77e-c7b6-42e8-b8d2-066c267bf91f" />
