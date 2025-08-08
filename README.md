@@ -22,7 +22,7 @@ Dieser Zitationsstil kann in jeder üblichen Zitationssoftware verwendet werden.
 ### Funktionen
 
 Momentan sind die Medientypen Buch, Website und Zeitschriftenartikel voll unterstützt.
-Der Medientyp Buchteil ist eingeschränkt unterstützt, dazu [hier](#aufsatz-aus-sammelwerk-buchteil) mehr 
+Der Medientyp Buchteil ist eingeschränkt unterstützt, dazu [hier](#aufsatz-aus-sammelwerk-/-buchteil) mehr 
 
 Der Stil verwendet den Eintrag Kurztitel (title-short) für das von der FOM geforderte Stichwort.
 Folgende Felder müssen für eine korrekte Zitation nach dem Leitfaden gefüllt sein:
