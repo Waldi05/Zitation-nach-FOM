@@ -33,6 +33,14 @@ Folgende Felder müssen für eine korrekte Zitation nach dem Leitfaden gefüllt 
 | <h5>Website</h5>              | Autor (author) <br>Kurztitel (title-short) <br>Datum (issued) <br>Titel (title) <br>URL (URL) <br>Heruntergeladen am (accessed)                                                                                                                                                                                                                                            |
 | <h5>Buchteil</h5>             | <h5> im Eintrag “Buchteil” </h5>Autor (author) <br>Kurztitel (title-short) <br>Datum (issued) <br>Titel (title) <br>Herausgeber (editor) <br>Buchtitel (container-title) <br><h5> im Eintrag “Buch” </h5> <br>Herausgeber (editor) <br>Kurztitel (title-short) <br>Datum (issued) <br>Titel (title) <br>Auflage (edition) <br>Ort (publisher-place) <br>Verlag (publisher) |
 
+Wird ein Feld, wie das Datum leer gelassen, wird es durch o. J. ersetzt. Folgende Felder werden ersetzt, wenn sie leer gelassen werden:
+
+| Feld                   | Platzhalter |
+| ---------------------- | ----------- |
+| Datum (issued)         | o. J.       |
+| Author (author)        | o. V.       |
+| Seite (locator=”page”) | o. S.       | 
+
 ### FOM 2024 verwenden
 
 Wird eine Fußnote angelegt, kann im Feld Präfix ein `Vgl.` bei einem indirekten Zitat eingefügt werden. Wird das Feld Seite leer gelassen, wird statt einer Seite `o. S.` (ohne Seite) angegeben.
@@ -56,7 +64,18 @@ Das Literaturverzeichnis ist alphabetisch nach dem ersten Nachnamen des ersten A
 
 Optional kann über einen Eintrag ``Titel: Internetquellen, Eintragsart: Fall (legal-case)`` eine Automatische Überschrift im Literaturverzeichnis erzeugt werden. Hierzu wird dieser Eintrag in einer Fußnote zitiert, woraufhin im Zotero Plugin der “Refresh” Knopf gedrückt wird. Nun ist die Überschrift im Literaturverzeichnis und die Fußnote kann wieder entfernt werden. Bei erneutem “Refresh” verschwindet die Überschrift wieder.
 
+## Fehler beheben
 
+Falls der Stil sich nicht wie erwartet verhält gibt es folgende Lösungsmöglichkeiten:
+
+- Prüfen ob alle Angaben korrekt ausgefüllt sind
+- Refresh in Word klicken
+- Dokumenteneinstellungen in Word prüfen
+	- Die Literaturangeben sollten als Fußnoten und nicht als Endnoten angezeigt werden.
+	- bei einem Artikel aus einer Fachzeitschrift kann hier entweder automatisch eine Abkürzung für den Titel der Veröffentlichung gefunden werden, oder der manuell eingetragene Titel verwendet werden:
+		- [ ] Abgekürzte Zeitschriftentitel von MEDLINE verwenden
+- Zotero und Word neu starten
+- Die betreffende Quelle in Zotero als CSL JSON exportieren und mir schicken
 
 
 
