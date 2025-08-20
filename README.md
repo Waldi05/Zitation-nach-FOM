@@ -72,13 +72,13 @@ Ist ein Buch in der ersten Auflage, soll die Auflage nicht im Verweis im Literat
 
 Beim Interview müssen zusätzliche Parameter im Feld `Extra` eingegeben werden, da Zotero für diese Funktionen noch keine Felder hat. Siehe hierzu [Extra](#extra)
 
-Interviews werden in einem gesondertes Quellenverzeichnis angegeben siehe hierzu [Literaturverzeichnis / Quellenverzeichnis](#literaturverzeichnis-/-quellenverzeichnis)
+Interviews werden in einem gesondertes Quellenverzeichnis angegeben siehe hierzu [Literaturverzeichnis und Quellenverzeichnis](#literaturverzeichnis-und-quellenverzeichnis)
 
 Wird kein `Event Place` angegeben, wird davon ausgegangen, dass das Interview online statt gefunden hat.
 
 Die Einträge `Page` und `Page First` sind austauschbar. `Page` kann z.B. für Seitenbereiche verwendet werden, während `Page First` die Anfangsseite beinhaltet.
 
-#### Literaturverzeichnis / Quellenverzeichnis
+#### Literaturverzeichnis und Quellenverzeichnis
 
 Das Literaturverzeichnis ist alphabetisch nach dem ersten Nachnamen des ersten Autors sortiert, wobei alle “klassische” Literatur zuerst kommt und alle Internetquellen danach eingefügt werden. Werden zusätzlich andere Quellen, wie Interviews verwendet, die nicht zur Literatur gehören, werden sie in ein separates Quellenverzeichnis einsortiert.
 
