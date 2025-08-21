@@ -1,6 +1,6 @@
 # Zitation nach FOM
 
-Dieser Zitationsstil richtet sich nach dem "Leitfaden zur formalen Gestaltung von Seminar- und Abschlussarbeiten" der FOM Hochschule mit dem Stand aus dem Januar 2024.  
+Dieser Zitationsstil richtet sich nach dem "Leitfaden zur formalen Gestaltung von Seminar- und Abschlussarbeiten" der FOM Hochschule mit dem Stand aus dem Januar 2024 und setzt die Harvard (note) Zitationsweise ein.  
 **Das ganze ist WIP, nicht alles funktioniert und ich übernehme keine Garantie auf die Ergebnisse**
 
 ## Installation 
