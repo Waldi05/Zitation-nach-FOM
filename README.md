@@ -183,8 +183,7 @@ For Creator variables, separate two-field names entered in Extra with two vertic
 Editorial Director: De Gaulle || Charles
 ```
 
----
-<a href=”https://github.com/Waldi05/Zitation-nach-FOM”>FOM Zitation nach Leitfaden 2024 (note)</a> © 2025 by Lukas Waldhör is licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
+
 
 
 
