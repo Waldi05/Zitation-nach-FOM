@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<style xmlns="http://purl.org/net/xbiblio/csl" class="note" version="1.0" page-range-format="expanded">
+  <!-- This style was edited with the Visual CSL Editor (https://editor.citationstyles.org/visualEditor/) -->
+  <info>
+    <title>FOM Zitation nach Leitfaden 2024 (note)</title>
+    <title-short>FOM 2024</title-short>
+    <id>http://www.zotero.org/styles/fom-zitation-nach-leitfaden-2024</id>
+    <link rel="self" href="http://www.zotero.org/styles/fom-zitation-nach-leitfaden-2024"/>
+    <author>
+      <name>Lukas Waldhör</name>
+    </author>
+    <category citation-format="note"/>
+    <category field="generic-base"/>
+    <summary>Dieser Zitationsstil richtet sich nach dem Leitfaden, der hier gefunden werden kann:</summary>
+    <updated>2025-09-01T06:07:57+00:00</updated>
+    <rights>CC BY-NC 4.0</rights>
+  </info>
+  <macro name="Autor_Name_kurz">
+    <group delimiter=", ">
+      <choose>
+        <if match="any" variable="author">
+          <names variable="author" font-style="italic">
+            <name initialize-with="." name-as-sort-order="all"/>
+            <et-al/>
+          </names>
+        </if>
+        <else>
+          <text value="o. V. " font-style="italic"/>
+        </else>
+      </choose>
+    </group>
+  </macro>
+  <macro name="Stichwort">
+    <group delimiter=", ">
+      <text variable="title-short"/>
+      <choose>
+        <if match="any" variable="issued">
+          <date date-parts="year" form="text" variable="issued"/>
+        </if>
+        <else>
+          <text value="o. J."/>
+        </else>
+      </choose>
+    </group>
+  </macro>
+  <macro name="Titel">
+    <text variable="title"/>
+  </macro>
+  <macro name="Autor_Name_lang">
+    <group>
+      <choose>
+        <if match="any" variable="author">
+          <names variable="author" font-style="italic">
+            <name delimiter-precedes-last="always" et-al-use-last="true" initialize="false" name-as-sort-order="all"/>
+          </names>
+        </if>
+        <else>
+          <text value="o. V. " font-style="italic"/>
+        </else>
+      </choose>
+    </group>
+  </macro>
+  <macro name="Ausgabe">
+    <group>
+      <choose>
+        <if match="any" variable="edition">
+          <group delimiter=". ">
+            <text variable="edition"/>
+            <text term="edition" form="short"/>
+          </group>
+        </if>
+      </choose>
+    </group>
+  </macro>
+  <macro name="Jahrgang_Jahr_Heftnr">
+    <group delimiter=", ">
+      <group delimiter=" ">
+        <text variable="volume"/>
+        <date date-parts="year" form="text" variable="issued" prefix="(" suffix=")"/>
+      </group>
+      <group delimiter=" ">
+        <text value="Nr."/>
+        <text variable="issue"/>
+      </group>
+    </group>
+  </macro>
+  <macro name="Aut_Stichw_Titel">
+    <group delimiter=" ">
+      <text macro="Autor_Name_lang"/>
+      <group prefix="(" suffix="):">
+        <text macro="Stichwort"/>
+      </group>
+      <text macro="Titel"/>
+    </group>
+  </macro>
+  <macro name="URL_Datum_Zugriff">
+    <group delimiter=" ">
+      <text variable="URL" prefix="&lt;" suffix="&gt;"/>
+      <choose>
+        <if match="any" variable="issued">
+          <date form="numeric" variable="issued" prefix="(" suffix=")"/>
+        </if>
+        <else>
+          <text value="(keine Datumsangabe)"/>
+        </else>
+      </choose>
+      <group delimiter=" " prefix="[" suffix="]">
+        <text value="Zugriff"/>
+        <date form="numeric" variable="accessed"/>
+      </group>
+    </group>
+  </macro>
+  <macro name="Smlw_Aut_Titel">
+    <group delimiter=", ">
+      <group delimiter=" ">
+        <names variable="editor">
+          <name font-style="italic" initialize="false" name-as-sort-order="all"/>
+        </names>
+        <text term="editor" form="short" prefix="(" suffix=")"/>
+      </group>
+      <text variable="container-title"/>
+    </group>
+  </macro>
+  <macro name="Sortieren_Art">
+    <group>
+      <choose>
+        <if type="webpage" match="any">
+          <text value="5"/>
+        </if>
+        <else-if type="legal_case" match="all" variable="title-short">
+          <text value="50"/>
+        </else-if>
+        <else-if type="legal_case" match="all">
+          <text value="2"/>
+        </else-if>
+        <else-if type="article-journal book chapter" match="any">
+          <text value="1"/>
+        </else-if>
+        <else-if type="interview" match="any">
+          <text value="51"/>
+        </else-if>
+        <else>
+          <text value="1001"/>
+        </else>
+      </choose>
+    </group>
+  </macro>
+  <macro name="Aut_HRSG_Stichw_Titel">
+    <group delimiter=", ">
+      <group delimiter=" ">
+        <text macro="Hrsg_Name_lang"/>
+        <text term="editor" form="short" prefix="(" suffix=")"/>
+        <group delimiter=", " prefix="(" suffix="):">
+          <text macro="Stichwort"/>
+        </group>
+        <text macro="Titel"/>
+      </group>
+      <group delimiter=". ">
+        <text macro="Ausgabe"/>
+      </group>
+      <group delimiter=": ">
+        <text variable="publisher-place"/>
+        <text variable="publisher"/>
+      </group>
+      <date date-parts="year" form="text" variable="issued"/>
+    </group>
+  </macro>
+  <macro name="Hrsg_Name_lang">
+    <group font-style="italic">
+      <names variable="editor">
+        <name delimiter-precedes-last="always" et-al-use-last="true" initialize="false" name-as-sort-order="all"/>
+      </names>
+    </group>
+  </macro>
+  <macro name="Anhang_Place_Page">
+    <group delimiter=", " prefix="[" suffix="]">
+      <group delimiter=" ">
+        <text variable="archive"/>
+        <text variable="archive_location" prefix="Nr. "/>
+      </group>
+      <group>
+        <choose>
+          <if match="all" variable="page page-first">
+            <text variable="page" prefix="S. "/>
+          </if>
+          <else-if match="any" variable="page-first">
+            <text variable="page-first" prefix="S. "/>
+          </else-if>
+          <else>
+            <text variable="page" prefix="S. "/>
+          </else>
+        </choose>
+      </group>
+    </group>
+  </macro>
+  <macro name="Interview_Date_Place">
+    <group delimiter=" ">
+      <choose>
+        <if match="any" variable="event-place">
+          <text value="Interview vom"/>
+          <date form="text" variable="issued"/>
+          <text variable="event-place" prefix="in "/>
+        </if>
+        <else>
+          <text value="Onlineinterview vom"/>
+          <date form="text" date-parts="year-month-day" variable="issued"/>
+        </else>
+      </choose>
+    </group>
+  </macro>
+  <citation et-al-min="4" et-al-use-first="1" disambiguate-add-names="true">
+    <layout delimiter="; " suffix=".">
+      <group delimiter=", ">
+        <choose>
+          <if type="legal_case" match="any">
+            <group>
+              <text value="Diese Fußnote erzeugt die Überschrift " strip-periods="false"/>
+              <text variable="title" strip-periods="false" quotes="true" font-style="normal" font-variant="normal" font-weight="bold" text-decoration="none"/>
+              <text value=" im Literaturverzeichnis. Vor dem Export der Arbeit sollte sie entfernt werden. Ohne Refresh der Quellen bleibt die Überschrift im Literaturverzeichnis erhalten."/>
+            </group>
+          </if>
+          <else-if type="interview" match="any">
+            <text macro="Autor_Name_kurz"/>
+            <text macro="Stichwort"/>
+            <group delimiter=" ">
+              <text variable="archive"/>
+              <text variable="archive_location" prefix="Nr. "/>
+            </group>
+            <choose>
+              <if match="any" locator="page">
+                <text variable="locator" prefix="S. "/>
+              </if>
+              <else>
+                <text value="o. S."/>
+              </else>
+            </choose>
+          </else-if>
+          <else>
+            <group delimiter=", ">
+              <text macro="Autor_Name_kurz"/>
+              <text macro="Stichwort"/>
+              <choose>
+                <if match="any" locator="page">
+                  <text variable="locator" prefix="S. "/>
+                </if>
+                <else>
+                  <text value="o. S."/>
+                </else>
+              </choose>
+            </group>
+          </else>
+        </choose>
+      </group>
+    </layout>
+  </citation>
+  <bibliography initialize-with=". " name-as-sort-order="all" hanging-indent="true">
+    <sort>
+      <key macro="Sortieren_Art"/>
+      <key macro="Autor_Name_lang"/>
+      <key variable="issued"/>
+    </sort>
+    <layout>
+      <group>
+        <choose>
+          <if type="book" match="any">
+            <choose>
+              <if match="any" variable="editor">
+                <text macro="Aut_HRSG_Stichw_Titel"/>
+              </if>
+              <else>
+                <group delimiter=", ">
+                  <text macro="Aut_Stichw_Titel"/>
+                  <text macro="Ausgabe"/>
+                  <group delimiter=": ">
+                    <choose>
+                      <if match="any" variable="publisher-place">
+                        <text variable="publisher-place"/>
+                      </if>
+                      <else>
+                        <text value="o. O. "/>
+                      </else>
+                    </choose>
+                    <text variable="publisher"/>
+                  </group>
+                  <date date-parts="year" form="text" variable="issued"/>
+                </group>
+              </else>
+            </choose>
+          </if>
+          <else-if type="chapter" match="any">
+            <group delimiter=", ">
+              <text macro="Aut_Stichw_Titel"/>
+              <group delimiter=" ">
+                <text value="in:"/>
+                <text macro="Smlw_Aut_Titel"/>
+              </group>
+              <date date-parts="year" form="text" variable="issued"/>
+              <group delimiter=" ">
+                <text value="S."/>
+                <text variable="page"/>
+              </group>
+            </group>
+          </else-if>
+          <else-if type="article-journal" match="any">
+            <group delimiter=", ">
+              <text macro="Aut_Stichw_Titel"/>
+              <group delimiter=" ">
+                <text value="in:"/>
+                <text variable="container-title-short"/>
+              </group>
+              <text macro="Jahrgang_Jahr_Heftnr"/>
+              <group delimiter=" ">
+                <choose>
+                  <if match="any" variable="page">
+                    <text value="S."/>
+                    <text variable="page"/>
+                  </if>
+                  <else>
+                    <text value="o. S. "/>
+                  </else>
+                </choose>
+              </group>
+            </group>
+          </else-if>
+          <else-if type="webpage" match="any">
+            <group delimiter=", ">
+              <text macro="Aut_Stichw_Titel"/>
+              <text macro="URL_Datum_Zugriff"/>
+            </group>
+          </else-if>
+          <else-if type="interview" match="any">
+            <group delimiter=", ">
+              <text macro="Aut_Stichw_Titel"/>
+              <text macro="Interview_Date_Place"/>
+              <text macro="Anhang_Place_Page"/>
+            </group>
+          </else-if>
+          <else-if type="legal_case" match="any">
+            <text variable="title" font-style="normal" font-variant="normal" font-weight="bold" display="block"/>
+          </else-if>
+        </choose>
+      </group>
+    </layout>
+  </bibliography>
+</style>
