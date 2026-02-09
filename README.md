@@ -55,6 +55,7 @@ Wird ein Feld, wie das Datum leer gelassen, wird es durch o. J. ersetzt. Folgend
 
 #### Verwendung 
 
+Zur Verwendung ist der Bibliotheksmodus zu empfehlen!
 Wird eine Fußnote angelegt, kann im Feld Präfix ein `Vgl.` bei einem indirekten Zitat eingefügt werden. Wird das Feld Seite leer gelassen, wird statt einer Seite `o. S.` (ohne Seite) angegeben.
 <img width="1076" height="708" alt="image" src="https://github.com/user-attachments/assets/31cee77e-c7b6-42e8-b8d2-066c267bf91f" />
 Alle Werke, die auf diese Art in einer Fußnote erwähnt wurden, werden bei Erstellung des Literaturverzeichnisses automatisch eingetragen.
