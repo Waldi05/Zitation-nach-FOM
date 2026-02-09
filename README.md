@@ -42,6 +42,7 @@ Folgende Felder müssen für eine korrekte Zitation nach dem Leitfaden gefüllt 
 | <h5>Website</h5>              | Autor (author) <br>Kurztitel (title-short) <br>Datum (issued) <br>Titel (title) <br>URL (URL) <br>Heruntergeladen am (accessed)                                                                                                                                                                                                                                            |
 | <h5>Buchteil</h5>             | <h5>im Eintrag “Buchteil” </h5>Autor (author) <br>Kurztitel (title-short) <br>Datum (issued) <br>Titel (title) <br>Herausgeber (editor) <br>Buchtitel (container-title) <br><h5> im Eintrag “Buch” </h5>Herausgeber (editor) <br>Kurztitel (title-short) <br>Datum (issued) <br>Titel (title) <br>Auflage (edition) <br>Ort (publisher-place) <br>Verlag (publisher) |
 | <h5>Interview</h5>            | <h5>in den gewöhnlichen Feldern </h5>Interview mit (author) <br>Datum (date)<br>Kurztitel (title-short)<br>Archiv (archive)<br>Standort im Archiv (archive_location)<br><h5>im Feld Extra *[mehr hier](#interview)*</h5>Event Place: <br>Page:<br>Page-First:                                                                                                                                                                                                                                                                                                                                                                           |
+| <h5>Norm<h5>                  | Titel (title) <br>Nummer <br>Version (version) <br>Kurztitel (title-short)                                                                                                                                                                                                                                                                                           | 
 
 
 Wird ein Feld, wie das Datum leer gelassen, wird es durch o. J. ersetzt. Folgende Felder werden ersetzt, wenn sie leer gelassen werden:
@@ -78,6 +79,17 @@ Interviews werden in einem gesondertes Quellenverzeichnis angegeben siehe hierzu
 Wird kein `Event Place` angegeben, wird davon ausgegangen, dass das Interview online statt gefunden hat.
 
 Die Einträge `Page` und `Page First` sind austauschbar. `Page` kann z.B. für Seitenbereiche verwendet werden, während `Page First` die Anfangsseite beinhaltet.
+
+##### Norm
+
+Sodass eine Norm korrekt zitiert wird, müssen die Angaben folgendermaßen gemacht werden:
+
+| Kategorie | Angabe                                                                                         |
+| --------- | ---------------------------------------------------------------------------------------------- |
+| Titel     | Graphische Symbole für Schaltpläne - Teil 5: Schaltzeichen für Halbleiter und Elektronenröhren |
+| Nummer    | DIN EN 60617-5                                                                                 |
+| Version   | 1997-08                                                                                        |
+| Kurztitel | Schaltzeichen                                                                                  | 
 
 #### Literaturverzeichnis und Quellenverzeichnis
 
