@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <style xmlns="http://purl.org/net/xbiblio/csl" class="note" version="1.0" page-range-format="expanded">
   <!-- This style was edited with the Visual CSL Editor (https://editor.citationstyles.org/visualEditor/) -->
   <info>
@@ -12,7 +12,7 @@
     <category citation-format="note"/>
     <category field="generic-base"/>
     <summary>Dieser Zitationsstil richtet sich nach dem Leitfaden, der hier gefunden werden kann:</summary>
-    <updated>2025-09-01T06:07:57+00:00</updated>
+    <updated>2026-02-09T14:54:51+00:00</updated>
     <rights>CC BY-NC 4.0</rights>
   </info>
   <macro name="Autor_Name_kurz">
@@ -208,6 +208,9 @@
       </choose>
     </group>
   </macro>
+  <macro name="Nummer_Norm">
+    <text variable="number" font-style="italic"/>
+  </macro>
   <citation et-al-min="4" et-al-use-first="1" disambiguate-add-names="true">
     <layout delimiter="; " suffix=".">
       <group delimiter=", ">
@@ -226,6 +229,18 @@
               <text variable="archive"/>
               <text variable="archive_location" prefix="Nr. "/>
             </group>
+            <choose>
+              <if match="any" locator="page">
+                <text variable="locator" prefix="S. "/>
+              </if>
+              <else>
+                <text value="o. S."/>
+              </else>
+            </choose>
+          </else-if>
+          <else-if type="standard" match="any">
+            <text macro="Nummer_Norm" font-style="normal"/>
+            <text macro="Stichwort"/>
             <choose>
               <if match="any" locator="page">
                 <text variable="locator" prefix="S. "/>
@@ -337,6 +352,21 @@
           </else-if>
           <else-if type="legal_case" match="any">
             <text variable="title" font-style="normal" font-variant="normal" font-weight="bold" display="block"/>
+          </else-if>
+          <else-if type="standard" match="any">
+            <group delimiter=" ">
+              <text macro="Nummer_Norm"/>
+              <group prefix="(" suffix="):">
+                <text macro="Stichwort"/>
+              </group>
+              <group delimiter=", ">
+                <text macro="Titel"/>
+                <group>
+                  <text value="Ausgabe "/>
+                  <text variable="version"/>
+                </group>
+              </group>
+            </group>
           </else-if>
         </choose>
       </group>
