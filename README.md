@@ -1,7 +1,6 @@
 # Zitation nach FOM
 
 Dieser Zitationsstil richtet sich nach dem "Leitfaden zur formalen Gestaltung von Seminar- und Abschlussarbeiten" der FOM Hochschule mit dem Stand aus dem Januar 2024 und setzt die Harvard (note) Zitationsweise ein.  
-**Das ganze ist WIP, nicht alles funktioniert und ich übernehme keine Garantie auf die Ergebnisse**
 
 ## Installation 
 
@@ -109,7 +108,7 @@ Falls der Stil sich nicht wie erwartet verhält gibt es folgende Lösungsmöglic
 	- bei einem Artikel aus einer Fachzeitschrift kann hier entweder automatisch eine Abkürzung für den Titel der Veröffentlichung gefunden werden, oder der manuell eingetragene Titel verwendet werden:
 		- [ ] Abgekürzte Zeitschriftentitel von MEDLINE verwenden
 - Zotero und Word neu starten
-- Die betreffende Quelle in Zotero als CSL JSON exportieren und mir schicken
+- Ein Issue auf GitHub öffnen (am besten mit einer CSL JSON Datei der Wuelle, die zitiert werden soll)
 
 ---
 
